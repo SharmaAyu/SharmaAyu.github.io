@@ -1,0 +1,9 @@
+git clone https://github.com/SharmaAyu/SharmaAyu.github.io.git
+
+username: SharmaAyu
+
+git add --all
+
+git commit -m "message"
+
+git push -u origin master
