@@ -1,21 +1,8 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jQuery selectstyle Plugin Demos</title>
-<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-<link href="src/selectstyle.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-
 
 <div class="container">
 <h1>jQuery selectstyle Demos</h1>
 
-<select width="400" placeholder="Select Your Favorite" data-search="true">
+<select theme="google" width="400" style="" placeholder="Select Your Favorite" data-search="true">
 	<option value="AF">Afghanistan</option>
 	<option value="AX">Åland Islands</option>
 	<option value="AL">Albania</option>
@@ -266,22 +253,20 @@
 	<option value="ZM">Zambia</option>
 	<option value="ZW">Zimbabwe</option>
 </select>
-<br>
-
-<iframe width="500px" height="300px" src="index.txt"> index </iframe>
+<iframe src="index.txt"></iframe>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="src/selectstyle.js"></script>
 <script>
-	jQuery(document).ready(function($) {
-		$('select').selectstyle({
-			width  : 400,
-			height : 300,
-			theme  : 'light',
-			onchange : function(val){}
-		});
+jQuery(document).ready(function($) {
+	$('select').selectstyle({
+		width  : 400,
+		height : 300,
+		theme  : 'light',
+		onchange : function(val){}
 	});
-	</script>
+});
+</script>
 
 </body>
 </html>
